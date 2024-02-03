@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .nav-brand {
+    /* Esto asegura que el brand se quede a la izquierda */
+    flex: 1;
+  }
+  
+  .nav-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1; /* Esto le da a las categorías espacio para centrarse */
+  }
+  
+  .nav-cart {
+    /* Esto asegura que el cart widget se quede a la derecha */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-categories h1 {
+    margin: 0; /* Elimina márgenes predeterminados para alineación adecuada */
+    color: white; /* Asegura visibilidad contra el fondo oscuro */
+  }
+  
