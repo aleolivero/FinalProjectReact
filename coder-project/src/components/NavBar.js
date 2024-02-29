@@ -1,27 +1,42 @@
-import CartWidget from "./CartWidget";
-import './NavBar.css'; 
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-function NavBar(){
+import './NavBar.css';
 
-
+function Navbar() {
     return (
+        <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div className="navbar-menu is-active">
+                <div className="navbar-start">
+                    <div className="navbar-item has-text-centered">
+                        <Link className="has-text-white has-text-weight-bold" to="/">Home</Link>
+                    </div>
+                </div>
 
-        <nav className="navbar">
-            <div className="nav-brand">Projecto Coder</div>
-            
-            <div className="nav-categories">
-                <h1>Categoría 1</h1>
-                <h1>Categoría 2</h1>
-                <h1>Categoría 3</h1>
-            </div>
-            
-            <div className="nav-cart">
-                <CartWidget />
-            </div>
-      
-      </nav>
-      )  
+                <div className="navbar-item has-text-centered">
+                    <Link className="has-text-white has-text-weight-bold" to="/category/electronics">Electronics</Link>
+                </div>
+                <div className="navbar-item has-text-centered">
+                    <Link className="has-text-white has-text-weight-bold" to="/category/jewelery">Jewelery</Link>
+                </div>
+                <div className="navbar-item has-text-centered">
+                    <Link className="has-text-white has-text-weight-bold" to="/category/clothing">Clothing</Link>
+                </div>
 
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <div className="has-text-white has-text-weight-bold cart">
+                            <FontAwesomeIcon icon={faShoppingCart} />
+                            <span className="cart-counter">0</span> 
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    );
 }
 
-export default NavBar
+export default Navbar;

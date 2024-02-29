@@ -1,0 +1,6 @@
+/* ItemCount.css */
+.item-count-container {
+    width: 100%; /* O define un ancho específico según tus necesidades */
+    max-width: 200px; /* Ajusta este valor para establecer un ancho máximo */
+    margin: auto; /* Centra el componente si está dentro de un contenedor más grande */
+}

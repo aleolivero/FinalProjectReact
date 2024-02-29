@@ -1,33 +1,23 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
+/* NavBar.css */
+.cart-counter {
+    position: relative;
+    top: -10px;
+    right: -15px; 
+    background-color: red;
     color: white;
-    padding: 1rem;
-  }
-  
-  .nav-brand {
-    /* Esto asegura que el brand se quede a la izquierda */
-    flex: 1;
-  }
-  
-  .nav-categories {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    flex: 1; /* Esto le da a las categorías espacio para centrarse */
-  }
-  
-  .nav-cart {
-    /* Esto asegura que el cart widget se quede a la derecha */
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .nav-categories h1 {
-    margin: 0; /* Elimina márgenes predeterminados para alineación adecuada */
-    color: white; /* Asegura visibilidad contra el fondo oscuro */
-  }
-  
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+
+.cart {
+
+    margin-right: 1rem; 
+
+}

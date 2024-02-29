@@ -1,0 +1,21 @@
+/* ItemDetailContainer.css */
+.detail-image {
+    max-width: 20rem; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    max-height: 400px; 
+}
+
+.card-content {
+    text-align: center; 
+}
+
+.title, .subtitle {
+    margin-bottom: 0.75rem;
+}
+.card {
+    max-width: 60rem; 
+    margin: 0 auto; 
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.1); 
+}
